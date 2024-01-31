@@ -1,0 +1,125 @@
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 4rem;
+}
+
+.section-1-first-box {
+    align-self: self-start;
+    padding-left: 5rem;
+}
+
+.section-1-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.section-1-subheading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+.cryptocurrency-chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.crypto-chart-heading,
+.crypto-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.crypto-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.crypto-name,
+.crypto-price p,
+.crypto-status p,
+.crypto-chart p,
+.crypto-marketcap p {
+    height: 3rem;
+}
+
+.section-1-btn {
+    background: linear-gradient(To right, #3dd8ee, #0997e8);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    #section-1 {
+        padding: 4rem 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #section-1 {
+        padding: 3rem 0.5rem;
+    }
+
+    .section-1-first-box {
+        padding-left: 1rem;
+    }
+
+    .crypto-name-container > p {
+        font-size: 0.8rem;
+    }
+
+    .crypto-name p,
+    .crypto-price,
+    .crypto-status,
+    .crypto-marketcap {
+        font-size: 0.8rem;
+    }
+
+    .crypto-name p:nth-child(3) {
+        display: none;
+    }
+
+    .crypto-chart {
+        display: none;
+    }
+
+    .map-box {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-1-heading {
+        font-size: 1.2rem;
+    }
+
+    .section-1-subheading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .crypto-name > i {
+        display: none;
+    }
+}

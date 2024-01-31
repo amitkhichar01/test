@@ -1,0 +1,156 @@
+#section-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 2rem 7rem;
+    background-color: #00092a;
+}
+
+.map-box {
+    position: relative;
+}
+
+.map-box > img {
+    height: 500px;
+    opacity: 0.4;
+}
+
+.map-box .fa-bitcoin {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+}
+
+.map-box .fa-ethereum {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.map-box .fa-shield-dog {
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
+
+.map-box-number {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #0a1b2b;
+    padding: 0.4rem 0.8rem;
+    opacity: 0.9;
+}
+
+.map-box .number-box-1 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.map-box .number-box-2 {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+.map-box .number-box-3 {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+
+.map-box-number i {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.map-content {
+    width: 40%;
+}
+
+.map-content h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.map-content > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.map-content-inner-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.map-content-img {
+    background-color: #0f1535;
+    padding: 1.2rem;
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
+}
+
+.map-content-inner-box > div p:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.map-content-inner-box > div p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+@media (max-width: 1400px) {
+    #section-2 {
+        flex-wrap: wrap;
+    }
+
+    .map-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #section-2 {
+        padding: 2rem 4rem;
+    }
+
+    .map-content {
+        width: 100%;
+    }
+
+    .map-content-inner-box {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 700px) {
+    .map-box {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #section-2 {
+        padding: 2rem 0 0 0.6rem;
+    }
+    .map-content h2 {
+        font-size: 1.22rem;
+    }
+
+    .map-content > p {
+        font-size: 0.9rem;
+    }
+}

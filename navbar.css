@@ -1,0 +1,74 @@
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #091838;
+    position: relative;
+    height: 4rem;
+    letter-spacing: 0.4px;
+}
+
+.nav-logo {
+    margin-top: 0.8rem;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.bar-icon i {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .search-icon {
+        display: none;
+    }
+
+    .nav-link {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.5rem;
+        background-color: #00092a;
+        z-index: 100;
+    }
+
+    .inner-search-icon {
+        display: inline !important;
+        font-size: 1.5rem;
+    }
+
+    .nav-link p {
+        font-size: 1.4rem;
+    }
+
+    .xmark-icon {
+        align-self: flex-end;
+        display: block !important;
+    }
+
+    #nav-bar {
+        justify-content: start;
+    }
+
+    .bar-icon i {
+        display: block;
+    }
+}
